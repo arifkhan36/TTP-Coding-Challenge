@@ -12,17 +12,14 @@ var stringReformatting = function(s, k) {
         counter++;
     
       if((counter % k === 0) && (counter!==1)){
-        formatedString = newString.charAt(i) +"-"+ formatedString;
-
+          formatedString = newString.charAt(i) +"-"+ formatedString;
         }
-          else{
+        else{
             formatedString = newString.charAt(i) + formatedString;
         }
       
     }
-        formatedString= formatedString.substring(0, formatedString.length-1);
-        return formatedString;
+    formatedString= formatedString.substring(0, formatedString.length-1);
+    return formatedString;
 };
-
-
 stringReformatting ('123-5673-0898', 3);
